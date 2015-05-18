@@ -10,7 +10,7 @@
     <groupId>com.google.appengine.demos</groupId>
     <artifactId>appengine-try-java</artifactId>
 
-        <pluginRepositories>
+    <pluginRepositories>
         <pluginRepository>
             <id>google-staging</id>
             <name>Google Staging</name>
@@ -19,8 +19,8 @@
     </pluginRepositories>
 
     <properties>
-        <appengine.app.version>1</appengine.app.version>
-        <appengine.target.version>1.9.0</appengine.target.version>
+        <!-- <appengine.app.version>1</appengine.app.version> -->
+        <appengine.target.version>1.9.20</appengine.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -37,42 +37,42 @@
             <version>2.5</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
-        </dependency>
+        </dependency> -->
 
         <!-- Test Dependencies -->
-        <dependency>
+        <!-- <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
+        </dependency> -->
+        <!-- <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
             <version>1.9.0</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
+        </dependency> -->
+        <!-- <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-testing</artifactId>
             <version>${appengine.target.version}</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
+        </dependency> -->
+        <!-- <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>appengine-api-stubs</artifactId>
             <version>${appengine.target.version}</version>
             <scope>test</scope>
-        </dependency>
+        </dependency> -->
     </dependencies>
-      
+
     <build>
-        <outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory> 
-                                   
+        <outputDirectory>target/${project.artifactId}/WEB-INF/classes</outputDirectory>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -94,10 +94,10 @@
             <plugin>
                 <groupId>com.google.appengine</groupId>
                 <artifactId>appengine-maven-plugin</artifactId>
-                <version>1.9.0-maven3.0</version>
+                <version>1.9.20</version>
                 <configuration>
-                   <fullScanSeconds>1</fullScanSeconds>
-                   <server>preview.appengine.google.com</server>
+                    <fullScanSeconds>1</fullScanSeconds>
+                    <!--<server>preview.appengine.google.com</server>-->
                 </configuration>
             </plugin>
         </plugins>
