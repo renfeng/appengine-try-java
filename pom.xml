@@ -98,6 +98,7 @@
                 <configuration>
                     <fullScanSeconds>1</fullScanSeconds>
                     <!--<server>preview.appengine.google.com</server>-->
+                    <disableUpdateCheck>true</disableUpdateCheck>
                 </configuration>
             </plugin>
         </plugins>
